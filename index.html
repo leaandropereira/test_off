@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CEMItech 2022</title>
+  
+        <link rel="stylesheet" href="src/leaflet.css">
+        <link rel="stylesheet" href="src/css/bootstrap.min.css">
+        <script src="src/leaflet-src.js"></script>
+        <script src="src/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="plugins/L.Control.Pan.css">
+        <script src="plugins/L.Control.Pan.js"></script>
+        <link rel="stylesheet" href="plugins/L.Control.Zoomslider.css">
+        <script src="plugins/L.Control.Zoomslider.js"></script>
+        
+        <link rel="stylesheet" href="src/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@v0.74.0/dist/L.Control.Locate.min.css" />        
+        <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@v0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="plugins/easy-button.css">
+        <script src="plugins/easy-button.js"></script>
+        <link rel="stylesheet" href="plugins/L.Control.Sidebar.css">
+        <script src="plugins/L.Control.Sidebar.js"></script>
+        <script src="plugins/leaflet-providers.js"></script>
+        <link rel="stylesheet" href="plugins/Control.MiniMap.css">
+        <script src="plugins/Control.MiniMap.js"></script>
+        <script src="plugins/leaflet-search.js"></script>
+        <script src="plugins/leaflet.ajax.min.js"></script>
+        <link rel="stylesheet" href="plugins/full/Control.FullScreen.css"/>
+	    <script src="plugins/full/Control.FullScreen.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="src/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="src/jquery-ui.min.css"/>
+<!--
+        <link rel="stylesheet" href="plugins/side/leaflet-sidebar.css">
+        <script src="plugins/side/leaflet-sidebar.js"></script>
+-->
+    </head>
+    <body>        
+      
+        
+        <div id="mapdiv" class="col-md-12"></div>
+       <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js');
+        });
+      }
+
+       </script>
+        <script src="mapa.js"></script>
+        <script src="functions.js"></script>
+    </body>
+</html>
